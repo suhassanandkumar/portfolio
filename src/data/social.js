@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Suhas Kumar",
+  name: "Suhas Sanand Kumar",
   title: "Senior Full-Stack Developer",
   subtitle: "Angular · React · AWS Serverless",
   email: "suhasjavaui@gmail.com",
