@@ -1,0 +1,36 @@
+export const projects = [
+  {
+    id: "fiscora",
+    name: "Fiscora",
+    tagline: "Local-first personal finance, parsed entirely in your browser",
+    description:
+      "A privacy-first personal finance manager that extracts and converts PDF/CSV bank and UPI statements (PhonePe, Google Pay, Paytm) directly in the browser into structured monthly JSON streams. No statement data ever touches a server or database — everything is parsed, transformed, and stored on the user's own file system.",
+    highlights: [
+      "Client-side PDF/CSV parsing pipeline with zero server round-trips for sensitive financial data",
+      "Structured monthly exports (<month>_<year>.json) generated via the Local File System Access API",
+      "IndexedDB-backed local cache for fast repeat access without re-parsing statements",
+      "Deployed as a static SPA on AWS CloudFront + S3 for global, low-latency delivery",
+    ],
+    stack: ["Angular", "TypeScript", "Tailwind CSS", "pdfjs-dist", "papaparse", "IndexedDB", "AWS CloudFront", "S3"],
+    link: "https://d1ub7vmg84kpbf.cloudfront.net/about",
+    linkLabel: "View live app",
+    accent: "from-accent-500 to-violet-500",
+  },
+  {
+    id: "sribvs",
+    name: "Basava VidyaBhiruddhi Sanga",
+    tagline: "Full platform + admin dashboard for an NGO's daily operations",
+    description:
+      "A full-featured web platform and administrative dashboard built for an NGO, handling organizational management, public-facing outreach, and day-to-day operational workflows for staff and administrators — backed by a fully serverless AWS architecture.",
+    highlights: [
+      "Google Sign-In authentication gating a role-based admin dashboard",
+      "Serverless backend on AWS Lambda + API Gateway, with secrets managed via AWS Secrets Manager",
+      "Static frontend delivered through S3 + CloudFront with IAM-scoped deployment roles",
+      "Operational tooling that streamlines outreach and org-management workflows for non-technical staff",
+    ],
+    stack: ["Angular", "Tailwind CSS", "Google Sign-In", "AWS Lambda", "API Gateway", "S3", "CloudFront", "IAM", "Secrets Manager"],
+    link: "https://www.sribvs.org/dashboard",
+    linkLabel: "View live dashboard",
+    accent: "from-violet-500 to-fuchsia-500",
+  },
+];
