@@ -12,7 +12,7 @@ export default function Architecture() {
       <SectionHeading
         eyebrow="System Design"
         title="Architecture & Engineering Highlights"
-        description="Patterns I reach for when privacy, performance, and low operational overhead matter."
+        description="Patterns I reach for when privacy, performance and low operational overhead matter."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2">
@@ -31,7 +31,9 @@ export default function Architecture() {
                 <Icon size={20} />
               </div>
               <div>
-                <h3 className="font-display text-base font-semibold text-slate-900 dark:text-white">{item.title}</h3>
+                <h3 className="font-display text-base font-semibold text-slate-900 dark:text-white">
+                  {item.title}
+                </h3>
                 <p className="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">
                   {item.description}
                 </p>

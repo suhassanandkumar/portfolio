@@ -9,7 +9,7 @@ export default function Skills() {
       <SectionHeading
         eyebrow="Tech Stack"
         title="Skills & Technologies"
-        description="A toolkit spanning frontend frameworks, serverless cloud infrastructure, and browser-native data handling."
+        description="A toolkit spanning frontend frameworks, serverless cloud infrastructure and browser-native data handling."
       />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

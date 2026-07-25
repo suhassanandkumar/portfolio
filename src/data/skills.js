@@ -1,7 +1,14 @@
 export const skillGroups = [
   {
     category: "Frontend",
-    items: ["React", "Angular", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "HTML5 / CSS3"],
+    items: [
+      "React",
+      "Angular",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
+    ],
   },
   {
     category: "Backend & APIs",
@@ -9,11 +16,22 @@ export const skillGroups = [
   },
   {
     category: "Cloud & Serverless",
-    items: ["AWS S3", "CloudFront", "IAM", "Secrets Manager", "Serverless Architecture"],
+    items: [
+      "AWS S3",
+      "CloudFront",
+      "IAM",
+      "Secrets Manager",
+      "Serverless Architecture",
+    ],
   },
   {
     category: "Data & Storage",
-    items: ["IndexedDB", "Local File System Access API", "PDF/CSV Parsing", "JSON Data Pipelines"],
+    items: [
+      "IndexedDB",
+      "Local File System Access API",
+      "PDF/CSV Parsing",
+      "JSON Data Pipelines",
+    ],
   },
   {
     category: "Tooling",
@@ -35,11 +53,11 @@ export const architectureHighlights = [
   {
     title: "Serverless AWS deployment",
     description:
-      "Shipping static SPAs and APIs on S3, CloudFront, Lambda, and API Gateway, with IAM-scoped roles and Secrets Manager for credential handling.",
+      "Shipping static SPAs and APIs on S3, CloudFront, Lambda and API Gateway, with IAM-scoped roles and Secrets Manager for credential handling.",
   },
   {
     title: "Secure cloud delivery pipelines",
     description:
-      "Configuring CDN-backed distribution and least-privilege IAM policies so deployments stay fast, cacheable, and locked down by default.",
+      "Configuring CDN-backed distribution and least-privilege IAM policies so deployments stay fast, cacheable and locked down by default.",
   },
 ];

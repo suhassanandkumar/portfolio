@@ -40,7 +40,7 @@ export default function Hero() {
           className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 dark:text-slate-400"
         >
           I'm {profile.name}, a {profile.title.toLowerCase()} specializing in{" "}
-          <span className="text-slate-900 dark:text-white font-medium">Angular, React, and serverless AWS
+          <span className="text-slate-900 dark:text-white font-medium">Angular, React and serverless AWS
           architecture</span>. I design and ship production apps that put privacy and performance first — from
           in-browser document parsing to secure, CDN-backed cloud pipelines.
         </motion.p>
