@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Menu, X, Moon, Sun, Github, Linkedin } from "lucide-react";
+import { Menu, X, Moon, Sun, Github, Linkedin, Download } from "lucide-react";
 import { socialLinks } from "../data/social";
 
 const navLinks = [
@@ -46,6 +46,14 @@ export default function Navbar({ theme, toggleTheme }) {
         </div>
 
         <div className="hidden md:flex items-center gap-3">
+          <a
+            href={socialLinks.resume}
+            download
+            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 dark:border-white/10 px-3 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-300 hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-400 transition-colors"
+          >
+            <Download size={15} />
+            Resume
+          </a>
           <a
             href={socialLinks.github}
             target="_blank"
@@ -100,6 +108,14 @@ export default function Navbar({ theme, toggleTheme }) {
                 {link.label}
               </a>
             ))}
+            <a
+              href={socialLinks.resume}
+              download
+              className="mt-1 inline-flex w-fit items-center gap-1.5 rounded-lg border border-slate-200 dark:border-white/10 px-3 py-1.5 text-sm font-medium text-slate-600 dark:text-slate-300"
+            >
+              <Download size={15} />
+              Resume
+            </a>
             <div className="flex items-center gap-4 pt-3">
               <a href={socialLinks.github} target="_blank" rel="noreferrer" aria-label="GitHub">
                 <Github size={18} className="text-slate-500 dark:text-slate-400" />

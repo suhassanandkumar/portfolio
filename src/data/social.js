@@ -9,4 +9,5 @@ export const socialLinks = {
   github: "https://github.com/suhaskumar",
   linkedin: "#", // TODO: replace with actual LinkedIn profile URL
   email: `mailto:${profile.email}`,
+  resume: `${process.env.PUBLIC_URL}/Suhas_Sanand_Kumar_Resume.pdf`,
 };

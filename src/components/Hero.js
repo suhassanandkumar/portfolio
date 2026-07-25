@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 import { profile, socialLinks } from "../data/social";
 
 export default function Hero() {
@@ -63,6 +63,14 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-xl border border-slate-300 dark:border-white/15 px-5 py-3 text-sm font-semibold text-slate-700 dark:text-white transition-colors hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-400"
           >
             Get in Touch
+          </a>
+          <a
+            href={socialLinks.resume}
+            download
+            className="inline-flex items-center gap-2 rounded-xl border border-slate-300 dark:border-white/15 px-5 py-3 text-sm font-semibold text-slate-700 dark:text-white transition-colors hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-400"
+          >
+            <Download size={16} />
+            Download Resume
           </a>
         </motion.div>
 

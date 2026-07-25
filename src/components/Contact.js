@@ -1,9 +1,16 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, ArrowUpRight } from "lucide-react";
+import { Mail, Github, Linkedin, Download, ArrowUpRight } from "lucide-react";
 import { profile, socialLinks } from "../data/social";
 
 const links = [
+  {
+    label: "Resume",
+    value: "Download Resume",
+    href: socialLinks.resume,
+    icon: Download,
+    download: true,
+  },
   { label: "Email", value: profile.email, href: socialLinks.email, icon: Mail },
   {
     label: "GitHub",
@@ -48,18 +55,21 @@ export default function Contact() {
                 <a
                   key={link.label}
                   href={link.href}
+                  download={link.download || undefined}
                   target={
-                    link.href.startsWith("mailto:") ? undefined : "_blank"
+                    link.download || link.href.startsWith("mailto:") ? undefined : "_blank"
                   }
                   rel="noreferrer"
                   className="group inline-flex items-center gap-2.5 rounded-xl border border-slate-200 dark:border-white/10 bg-white dark:bg-white/5 px-5 py-3 text-sm font-semibold text-slate-700 dark:text-white transition-colors hover:border-accent-500 hover:text-accent-600 dark:hover:text-accent-400"
                 >
                   <link.icon size={16} />
                   {link.value}
-                  <ArrowUpRight
-                    size={14}
-                    className="text-slate-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
+                  {!link.download && (
+                    <ArrowUpRight
+                      size={14}
+                      className="text-slate-400 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+                    />
+                  )}
                 </a>
               ))}
             </div>
